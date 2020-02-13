@@ -54,6 +54,7 @@ headerH1[0].innerHTML = siteContent["cta"]["h1"];
 let headerBTN = document.getElementsByTagName("button");
 headerBTN[0].innerHTML = siteContent["cta"]["button"];
 
+
 //nav - using forEach to select ALL nav items
 let navItems = document.querySelectorAll("a");
 navItems.forEach((e, i) => {
@@ -94,6 +95,14 @@ allP[7].innerHTML = siteContent["contact"]["phone"];
 allP[8].innerHTML = siteContent["footer"]["copyright"];
 
 
+//Stretch Styling - allP
+
+for (let i = 0; i<allP.length; i++){
+  allP[i].style.color = 'orange';
+}
+
+
+
 
 //all H4
 let allH4 = document.getElementsByTagName("h4");
@@ -105,7 +114,6 @@ allH4[4].innerHTML = siteContent["main-content"]["vision-h4"];
 allH4[5].innerHTML = siteContent["contact"]["contact-h4"];
 
 
-//create new nav items using append/prepend child
 
 
 
